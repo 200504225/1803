@@ -1,0 +1,11 @@
+mkdir aa/bb/cc -p 创建叠加目录
+clear清屏
+more分屏显示
+ | 管道
+cat查看
+cat 1.txt > 2.txt重定向 >>重复定向
+rm删除  rm-r逐层删除
+ln 硬链接 ln -s软连接
+ls ×.txt通配符
+tree 逐层列表
+
