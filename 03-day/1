@@ -1,0 +1,140 @@
+  914  cd ~/.ssh/
+  915  ssh -T git@github.com
+  916  cd /桌面
+  917  cd
+  918  cd 桌面/1803
+  919  ls
+  920  git init
+  921  ll
+  922  git init remote add origin git@github.com:200504225/1803.git
+  923  git remote add origin git@github.com:200504225/1803.git
+  925  git remote -v
+  926  git add .
+  927  git status
+  928  git commit -m "今天学到了归档"
+  929  git config --global user.email "200504225@qq.com"
+  930  git config --global user.name "200504225"
+  931  git commit -m "今天学到了归档"
+  932  git status
+  933  git puch origin master
+xuedongyan@xuedongyan:~/桌面/1803/03-day$ rm 101 -r
+xuedongyan@xuedongyan:~/桌面/1803/03-day$ ls
+007  008  009  01.tar  02.tar.gz  03.tar.bz2  04.zip
+xuedongyan@xuedongyan:~/桌面/1803/03-day$ cd
+xuedongyan@xuedongyan:~$ cd ~/.ssh/
+xuedongyan@xuedongyan:~/.ssh$ ls
+_  id_rsa  id_rsa.pub  known_hosts
+xuedongyan@xuedongyan:~/.ssh$ cd ..
+xuedongyan@xuedongyan:~$ ls
+examples.desktop  公共的  模板  视频  图片  文档  下载  音乐  桌面
+xuedongyan@xuedongyan:~$ cd ~/.ssh/
+xuedongyan@xuedongyan:~/.ssh$ ssh -T git@github.com
+Hi 200504225! You've successfully authenticated, but GitHub does not provide shell access.
+xuedongyan@xuedongyan:~/.ssh$ cd /桌面
+bash: cd: /桌面: 没有那个文件或目录
+xuedongyan@xuedongyan:~/.ssh$ cd
+xuedongyan@xuedongyan:~$ cd 桌面/1803
+xuedongyan@xuedongyan:~/桌面/1803$ ls
+01-day  02-day  03-day  04-day  05-day  06-day
+xuedongyan@xuedongyan:~/桌面/1803$ git init
+初始化空的 Git 仓库于 /home/xuedongyan/桌面/1803/.git/
+xuedongyan@xuedongyan:~/桌面/1803$ ll
+总用量 36
+drwxrwxr-x 9 xuedongyan xuedongyan 4096 3月  27 13:54 ./
+drwxr-xr-x 4 xuedongyan xuedongyan 4096 3月  26 15:54 ../
+drwxrwxr-x 2 xuedongyan xuedongyan 4096 3月  24 13:13 01-day/
+drwxrwxr-x 4 xuedongyan xuedongyan 4096 3月  26 15:47 02-day/
+drwxrwxr-x 5 xuedongyan xuedongyan 4096 3月  27 13:39 03-day/
+drwxrwxr-x 2 xuedongyan xuedongyan 4096 3月  25 11:55 04-day/
+drwxrwxr-x 2 xuedongyan xuedongyan 4096 3月  25 11:56 05-day/
+drwxrwxr-x 2 xuedongyan xuedongyan 4096 3月  25 11:56 06-day/
+drwxrwxr-x 7 xuedongyan xuedongyan 4096 3月  27 13:54 .git/
+xuedongyan@xuedongyan:~/桌面/1803$ git init remote add origin git@github.com:200504225/1803.git
+usage: git init [-q | --quiet] [--bare] [--template=<template-directory>] [--shared[=<permissions>]] [<directory>]
+xuedongyan@xuedongyan:~/桌面/1803$ git remote add origin git@github.com:200504225/1803.git
+
+xuedongyan@xuedongyan:~/桌面/1803$ git remote -v
+origin	git@github.com:200504225/1803.git (fetch)
+origin	git@github.com:200504225/1803.git (push)
+xuedongyan@xuedongyan:~/桌面/1803$ git add .
+xuedongyan@xuedongyan:~/桌面/1803$ git status
+位于分支 master
+
+初始提交
+
+要提交的变更：
+  （使用 "git rm --cached <文件>..." 以取消暂存）
+
+	新文件：   01-day/1.txt
+	新文件：   02-day/02/11.txt
+	新文件：   02-day/02/12.txt
+	新文件：   02-day/1.txt
+	新文件：   02-day/1/01/02/3.py
+	新文件：   02-day/1/01/02/xiao.py
+	新文件：   02-day/1/01/03/1.txt
+	新文件：   02-day/1/01/03/2.txt
+	新文件：   02-day/1/01/3.py
+	新文件：   02-day/1/01/5.html
+	新文件：   02-day/1/01/xiao.py
+	新文件：   03-day/007/1.txt
+	新文件：   03-day/007/2.txt
+	新文件：   03-day/007/3.txt
+	新文件：   03-day/007/4.txt
+	新文件：   03-day/01.tar
+	新文件：   03-day/02.tar.gz
+	新文件：   03-day/03.tar.bz2
+	新文件：   03-day/04.zip
+
+xuedongyan@xuedongyan:~/桌面/1803$ git commit -m "今天学到了归档"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'xuedongyan@xuedongyan.(none)')
+xuedongyan@xuedongyan:~/桌面/1803$ git config --global user.email "200504225@qq.com"
+
+xuedongyan@xuedongyan:~/桌面/1803$ git config --global user.name "200504225"
+xuedongyan@xuedongyan:~/桌面/1803$ git commit -m "今天学到了归档"[master （根提交） edae82c] 今天学到了归档
+ 19 files changed, 293 insertions(+)
+ create mode 100644 01-day/1.txt
+ create mode 100644 02-day/02/11.txt
+ create mode 100644 02-day/02/12.txt
+ create mode 100644 02-day/1.txt
+ create mode 100644 02-day/1/01/02/3.py
+ create mode 100644 02-day/1/01/02/xiao.py
+ create mode 100644 02-day/1/01/03/1.txt
+ create mode 100644 02-day/1/01/03/2.txt
+ create mode 100644 02-day/1/01/3.py
+ create mode 100644 02-day/1/01/5.html
+ create mode 100644 02-day/1/01/xiao.py
+ create mode 100644 03-day/007/1.txt
+ create mode 100644 03-day/007/2.txt
+ create mode 100644 03-day/007/3.txt
+ create mode 100644 03-day/007/4.txt
+ create mode 100644 03-day/01.tar
+ create mode 100644 03-day/02.tar.gz
+ create mode 100644 03-day/03.tar.bz2
+ create mode 100644 03-day/04.zip
+xuedongyan@xuedongyan:~/桌面/1803$ git status
+位于分支 master
+无文件要提交，干净的工作区
+
+xuedongyan@xuedongyan:~/桌面/1803$ git push origin master
+^[[A^[[B^[[BWarning: Permanently added the RSA host key for IP address '52.74.223.119' to the list of known hosts.
+对象计数中: 20, 完成.
+压缩对象中: 100% (16/16), 完成.
+写入对象中: 100% (20/20), 3.05 KiB | 0 bytes/s, 完成.
+Total 20 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To git@github.com:200504225/1803.git
+ * [new branch]      master -> master
+xuedongyan@xuedongyan:~/桌面/1803$ history
+
+  
