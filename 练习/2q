@@ -1,0 +1,14 @@
+acc = "123456"
+pwd = "123456"
+money = 100000
+
+s_acc = input("请输入账号")
+s_pwd = input("请输入密码")
+if s_acc == acc and s_pwd == pwd:
+	s_money = float(input("请输入取款金额\t"))
+	if s_money <= money:
+		print("已取%.02f元,剩余:%.02元f"%(s_money,oney-s_monry))
+	else:
+		print("没钱取毛线")
+else:
+	print("无效账户")

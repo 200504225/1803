@@ -1,0 +1,6 @@
+name = input("请输入名字")
+sex = input("请输入性别")
+age = input("请输入年龄")
+height = input("请输入身高")
+weigth = input("请输入体重")
+print("名字%s\n性别%s\n年龄%s\n身高%s\n体重%s\n"%(name,sex,age,height,weigth))

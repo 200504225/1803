@@ -5,4 +5,4 @@ while n < 100:
 	n+=1
 	b = n + b
 
-print("求和是%d"%b)
+print("求和是%d"%b)d
