@@ -1,0 +1,11 @@
+def introduction():
+	print("姓名:薛栋炎")
+	print("年龄:25")
+	print("性别:男")
+	print("身高:175")
+introduction()
+introduction()
+introduction()
+introduction()
+introduction()
+introduction()
