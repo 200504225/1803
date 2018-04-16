@@ -1,22 +1,19 @@
 def jj(z,x,c):
 	q = 0
-	if c == 1:
+	if c == 1 or c ==2 or c ==3 or c ==4:
 		q = z+x
-		print("和是%0.2f"%q)
+		return q
+		
 	elif c == 2:
 		q = z-x
-		print("差是%0.2f"%q)
 	elif c == 3:
 		q = z*x
-		print("积是%0.2f"%q)
 	elif c == 4:
 		if x != 0:
 			q = z/x
-			print("商是%0.2f"%q)
 		else:
 			print("输入错误")
-	else:
-		print("输入错误")
+	return q
 while True:
 	q = float(input("请输入数字"))
 	w = float(input("请在输入一个数字"))
@@ -24,4 +21,5 @@ while True:
 	
 
 
-	jj(q,w,e)
+jiegup = jj(q,w,e)
+print("jieguo")
