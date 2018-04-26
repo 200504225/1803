@@ -28,7 +28,7 @@ def lr():
 	department = input("请输入部门")
 	sex = input("请输入性别")
 	weig = float(input("请输入身高米"))
-	phone = int(input("请输入电话号码"))
+	phone = input("请输入电话号码")
 	zd["number"] = number
 	zd["name"] = name
 	zd["department"] = department
@@ -37,6 +37,7 @@ def lr():
 	zd["phone"] = phone
 	zl.append(zd)
 	print(zl)
+	print("录入成功")
 
 
 def xg():
@@ -69,7 +70,7 @@ def xg():
 				ll["sex"] =ns
 				print("修改成功")
 			elif xx == 5:
-				nw = input("请输入新身高")
+				nw = float(input("请输入新身高"))
 				ll["weig"] = nw
 				print("修改成功")
 			elif xx == 6:
@@ -87,8 +88,8 @@ def cz():
 	flag = 0
 	for ll in zl:
 		if number == ll["number"]:
-			falg =1
-			print("工号是:%d\n姓名是:%s\n部门是:%s\n性别是:%s\n身高是:%0.2f\n电话是:%d\n"%(ll["number"],ll["name"],ll["department"],ll["sex"],ll["weig"],ll["phone"]))
+			print("工号是:%s\n姓名是:%s\n部门是:%s\n性别是:%s\n身高是:%0.2f\n电话是:%s\n"%(ll["number"],ll["name"],ll["department"],ll["sex"],ll["weig"],ll["phone"]))
+			falg = 1
 		else:
 			print("工号错误")
 def sc():
@@ -100,12 +101,8 @@ def sc():
 			xz = int(input("确认删除--1  返回选项--2"))
 			if xz == 1:
 				zl.remove(ll)
-				break
-			else:
-				continue
-		else:
-
-			print("工号错误")
+	if flag ==0:
+		print("工号错误")
 
 
 
